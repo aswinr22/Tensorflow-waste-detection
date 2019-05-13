@@ -137,9 +137,32 @@ if camera_type == 'picamera':
             line_thickness=8,
             min_score_thresh=0.40)
         
-        for i in range (classes.size):
-            if(classes[0][i] == 2 and scores[0][i]>0.5):
-                
+          def move_servo(p):
+      p.start(2.5)  # Initialization
+      try:
+          p.ChangeDutyCycle(5)
+          time.sleep(4)
+          p.ChangeDutyCycle(10)
+          time.sleep(4)
+      except KeyboardInterrupt:
+          p.stop()
+
+
+
+        servoPIN = 17
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(servoPIN, GPIO.OUT)
+
+        # p is instantiated once
+        p = GPIO.PWM(servoPIN, 50)
+
+        for i in range(2):
+            if True:
+                # pass p into the function
+                move_servo(p)
+
+        # cliean up the gpio right before exiting the program.
+        GPIO.cleanup()
           
             
      
