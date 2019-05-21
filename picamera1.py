@@ -140,24 +140,21 @@ if camera_type == 'picamera':
             use_normalized_coordinates=True,
             line_thickness=8,
             min_score_thresh=0.40)
-        p = GPIO.PWM(servoPIN, 50)
-        p.start(2.5)
+       # p = GPIO.PWM(servoPIN, 50)
+       # p.start(2.5)
         for i in range (classes.size):
             if(classes[0][i] == 2 and scores[0][i]>0.5):
-                
-              #print("e waste detected")
+              print("e waste detected")
             #elif(classes[0][i] == 1 and scores[0][i]>0.5):
               #print("recycle detected")  
                #p.start(2.5) # Initialization
-               try:
-                  #while True:
-                 p.ChangeDutyCycle(5)
-                 time.sleep(4)
-                 p.ChangeDutyCycle(10)
-                 time.sleep(4)
-               except KeyboardInterrupt:
-                 p.stop()
-                 GPIO.cleanup()
+               ##  p.ChangeDutyCycle(5)
+                # time.sleep(4)
+                 #p.ChangeDutyCycle(10)
+                # time.sleep(4)
+             #  except KeyboardInterrupt:
+               #  p.stop()
+               #  GPIO.cleanup()
     
             
         #return image_np
