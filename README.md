@@ -12,7 +12,7 @@
 * Clone the tensorflow official repository from https://github.com/tensorflow/models.git
 * I am used SSD mobilenet model for training since the  detection happens to be in  raspberry pi , which has considerably low amount of specification
 
-## Labbeling image
+## Labelling the image
 Use LabelIMG tool
 
 ## Generate Training Data
@@ -35,9 +35,10 @@ This coomand will convert all xml files of labelled datasets to csv file
  
  Place inference graph folder in raspberry pi object detection folder
  
- Test using `python 3 object_detection picamera.py
+ Test it using `python 3 object_detection picamera.py`
  
  
  ## References
  https://github.com/tensorflow/models
+ 
  https://github.com/EdjeElectronics
