@@ -13,7 +13,7 @@ System identify wastes types and triggers a bin to open.
  
  ## Getting Started
 * Clone the tensorflow official repository from https://github.com/tensorflow/models.git
-* I am used SSD mobilenet model for training since the  detection happens to be in  raspberry pi , which has considerably low amount of specification
+* I Have used SSD mobilenet model for training since the  detection happens to be in  raspberry pi , which has considerably low amount of specification
 
 ## Labelling the image
 Use LabelIMG tool
