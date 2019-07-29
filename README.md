@@ -1,5 +1,7 @@
 # Waste management using Deep Learning in Raspberry Pi 3
 ## Overview
+The Raspberry pi automatically detects and identifies wastes through pi camera which coonected to 3 waste bins (e waste ,organic,recycle).
+System identify wastes types and triggers a bin to open. 
 
 
 
